@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+/* Home */
+main h2 {
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 35px;
+}
+
+/** Card */
+.favButton {
+    background-color: rgb(142, 182, 196);
+    padding: 10px;
+    border: 2px solid black;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.favButton:hover {
+    background-color: rgb(229, 229, 132);
+    border-color: rgb(136, 136, 136);
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    height: 120px;
+    background-color: rgb(142, 182, 196);
+}
+
+a {
+    text-decoration: underline;
+    color: #000;
+    margin: 5px;
+    cursor: pointer;
+}
+
+a:hover {
+    color: rgb(136, 136, 136);
+}
+
+nav button {
+    margin-left: 20px;
+    height: 40px;
+    width: 70px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+}
+
+nav h2 {
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.boton1 {
+    background-color: white;
+    border-color: black;
+}
+
+.boton2 {
+    background-color: white;
+    border-color: rgb(255, 208, 0);
+}
+
+.boton1:hover {
+    cursor: pointer;
+    border-color: grey;
+}
+
+.boton2:hover {
+    cursor: pointer;
+    border-color: rgb(206, 217, 142);
+}
+
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+footer>img {
+    width: 200px;
+    margin: 0;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 300px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 8px 20px;
+    box-sizing: border-box;
+    border: solid 2px rgb(142, 182, 196);
+}
+
+input[type=email] {
+    width: 100%;
+    padding: 8px 20px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: solid 2px rgb(142, 182, 196)
+}
+
+input[type=password] {
+    width: 100%;
+    padding: 8px 20px;
+    margin: 12px 0;
+    box-sizing: border-box;
+    border: solid 2px rgb(142, 182, 196)
+}
+
+form button {
+    background-color: rgb(142, 182, 196);
+    border: none;
+    color: white;
+    margin-left: 70px;
+    padding: 7px 30px;
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Card */
+.card {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    height: 60vh;
+    width: 300px;
+    padding: 0.5rem 0.5rem 0 0.5rem;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+
+.card-grid {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    width: 90vw;
+    height: auto;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card button {
+    width: 100%;
+}
+
+/*Favoritos*/
+.h1-favs {
+    margin-top: 25px;
+    margin-bottom: 3px;
+    text-align: center;
+}
+
+/* Details*/
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    display: table;
+    border: 1px solid #ccc;
+    margin-bottom: 440px;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+/* Dark Mode */
+.dark {
+    background-color: #252525;
+    color: white;
+}
+
+.dark>a {
+    color: white;
+}
+
+/* Contacto */
+.contacto {
+    margin-top: 100px;
+    text-align: center;
+    height: 430px;
+}
+
+.contacto h2 {
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.contacto p {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.contacto form {
+    margin-bottom: 50px;
+}
+
+.boton-eliminar {
+    background-color: rgb(142, 182, 196);
+    border: none;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 560px;
+    padding: 7px 30px;
+    width: 400px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.boton-eliminar:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*----- Login ----- */
+.form-login {
+    height: 200px;
+    width: 350px;
+    margin-top: 250px;
+}
+
+.login-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(".//assets/1932.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.form-login button {
+    margin: 0;
+    width: 100%;
+}
+
+.form-login img {
+    margin: auto;
+    width: 200px;
+}
